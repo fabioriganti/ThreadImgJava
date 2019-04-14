@@ -16,7 +16,7 @@ public class ReadRGB extends Thread{
         System.out.println(Thread.currentThread().getName() +" è iniziato.");
         bluemax = (rgb[0])&255;
         int tmp;
-        for(int i=1; i<rgb.length-1; i++){
+        for(int i=1; i<rgb.length; i++){
             tmp=(rgb[i])&255;
             if(tmp > bluemax) bluemax = tmp;
         }

@@ -33,6 +33,7 @@ public class ReadImage {
             thread[i].start();
         }
         latch.await();
+        System.out.println("Numero Thread totale: "+img.getHeight());
 
         max = thread[0].getBluemax();
         for(int i=1; i<img.getHeight(); i++){
