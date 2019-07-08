@@ -18,7 +18,7 @@ public class ReadRGB extends Thread{
     }
 
     public void run(){
-        int[] rgb = getRowRGB(row);
+        int[] rgb = getRGBFromRow(row);
         System.out.println(Thread.currentThread().getName() +" è iniziato.");
         int maxBlue = (rgb[0])&255;
         int column = 0;
@@ -36,11 +36,11 @@ public class ReadRGB extends Thread{
         latch.countDown();
     }
 
-    private int[] getRowRGB(int row){
+    private int[] getRGBFromRow(int row){
         int height = img.getHeight();
         int[] result = new int[height];
         for(int col=0; col<height; col++){
-            result[col] = img.getRGB(col,row);
+            result[col] = img.getRGB(row, col);
         }
         return result;
     }
