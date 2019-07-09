@@ -46,7 +46,7 @@ public class ReadImage {
                 if (maxBlue < sharedBuffer[i].getBlue())
                     max = sharedBuffer[i];
             }
-            System.out.println("Il valore di blu massimo trovato è "+max.getBlue()+" " +
+            System.out.println("Il valore di blu massimo trovato nella immagine è "+max.getBlue()+" " +
                     "alla posizione ("+max.getRow()+", "+max.getColumn()+").");
 
         } catch (InterruptedException e) {
