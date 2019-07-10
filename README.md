@@ -1,2 +1,2 @@
 # ThreadImgJava
-Esercizio di Sistemi Operativi che dice qual è il valore di blu più alto della immagine image.jpg, usando i Thread
+Progetto per Sistemi Operativi che permette di conoscere qual è il pixel con il valore di blu più alto della immagine da analizzare
